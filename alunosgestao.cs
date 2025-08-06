@@ -28,5 +28,13 @@ namespace ProGEs
             tela.Show();
 
         }
+
+        private void Alunos_Gestao_Load(object sender, EventArgs e)
+        {
+            Alunos alunos = new Alunos();
+            int cont = alunos.Contador_de_aluno();
+            string cont_soque_em_string = Convert.ToString(cont);
+            lblNumAlunos.Text = cont_soque_em_string;
+        }
     }
 }
